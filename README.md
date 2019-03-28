@@ -13,4 +13,5 @@ feature | 기능 구현 브랜치. develop에서 시작해서 구현 시 develop
 release | 실제 배포할 상태가 되면 생성하는 브랜치. develop에서 시작. develop, master에 병합. 추후 배포버전 쉽게 찾기 위해 태그를 만들어서 현재 병합되는 커밋을 가리키도록 한다. 네이밍 : release-*.
 hotfix | 이슈 발견 시 수정, master에서 시작. 수정완료 후 develop, master에 병합.
 
-
+규모가 크지않고 필요한 기능이 많지 않아 feature, release는 따로 생성 안함.  
+master, develop, hotfix 3개 브랜치로 작업하기로 결정.
