@@ -1,8 +1,10 @@
 import React from 'react';
+import PageTitle from './PageTitle';
+
 const Projects = () => {
   return (
     <>
-    <div>Projects</div>
+    <PageTitle title="Projects"></PageTitle>
     </>
   );
 }

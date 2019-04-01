@@ -1,8 +1,10 @@
 import React from 'react';
+import PageTitle from './PageTitle';
+
 const TechStack = () => {
   return (
     <>
-    <div>TechStack</div>
+    <PageTitle title="Tech stack"></PageTitle>
     </>
   );
 }
