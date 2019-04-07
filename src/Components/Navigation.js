@@ -1,33 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-
+import ReactTooltip from 'react-tooltip';
 
 
 const Navigation = () => {
   return (
     <>
       <StyledLinkSection order={1}>
-        <StyledLinkText flagDisplay={displayLinkTextArr[0]}>About</StyledLinkText>
-        <StyledLink to="/" ></StyledLink>
+        <StyledLink to="/" data-tip="About"></StyledLink>
       </StyledLinkSection>
       <StyledLinkSection order={2}>
-        <StyledLinkText flagDisplay={displayLinkTextArr[0]}>Career</StyledLinkText>
-        <StyledLink to="/Career" ></StyledLink>
+        <StyledLink to="/Career" data-tip="Career"></StyledLink>
       </StyledLinkSection>
       <StyledLinkSection order={3}>
-        <StyledLinkText flagDisplay={displayLinkTextArr[0]}>Tech Stack</StyledLinkText>
-        <StyledLink to="/TechStack" ></StyledLink>
+        <StyledLink to="/TechStack" data-tip="Tech stack"></StyledLink>
       </StyledLinkSection>
       <StyledLinkSection order={4}>
-        <StyledLinkText flagDisplay={displayLinkTextArr[0]}>Projects</StyledLinkText>
-        <StyledLink to="/Projects" ></StyledLink>
+        <StyledLink to="/Projects" data-tip="Projects"></StyledLink>
       </StyledLinkSection>
+      <ReactTooltip place="left" effect="solid"/>
     </>
   );
 };
-
-const displayLinkTextArr = [false, false, false, false];
 
 const StyledLinkSection = styled.section`
   position: fixed;
