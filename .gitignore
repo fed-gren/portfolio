@@ -24,3 +24,6 @@ yarn-error.log*
 
 # my log file
 /log.md
+
+# image
+images/
