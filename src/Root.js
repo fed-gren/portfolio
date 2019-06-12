@@ -1,8 +1,9 @@
 import React from "react";
 import "../styles/style.scss";
+import Projects from "./pages/Projects";
 
 const Root = () => {
-  return <h3 className="title">Title</h3>;
+  return <Projects />;
 };
 
 export default Root;
