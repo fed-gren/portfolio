@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Gallery from "../components/Gallery";
 
 export default () => {
   return (
     <div>
       <Layout>
-        <h1>Hi</h1>
+        <Gallery />
       </Layout>
     </div>
   );

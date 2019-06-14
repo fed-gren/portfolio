@@ -1,6 +1,14 @@
+$layout-big-width: 850px;
+$layout-medium-width: 480px;
+
+$break-small: 850px;
+
 .layout {
-  width: 850px;
+  width: $layout-big-width;
   margin: 0 auto;
   border: 1px dotted blue;
   background-color: #fff;
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+  }
 }

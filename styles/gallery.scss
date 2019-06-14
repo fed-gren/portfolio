@@ -1,0 +1,16 @@
+$break-small: 850px;
+
+.gallery {
+  display: grid;
+  width: 100%;
+  background-color: rgb(80, 180, 226);
+  border: 1px solid blueviolet;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1rem;
+  padding: 1rem;
+  @media screen and (max-width: $break-small) {
+    grid-template-columns: auto auto;
+    grid-gap: 0.5rem;
+    padding: 0.5rem;
+  }
+}
