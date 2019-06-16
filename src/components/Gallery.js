@@ -1,5 +1,5 @@
+import "../styles/gallery.scss";
 import React from "react";
-import "../../styles/gallery.scss";
 import Card from "../components/Card";
 
 export default () => {
@@ -48,8 +48,8 @@ export default () => {
 
   return (
     <div className="gallery">
-      {projects.map(project => {
-        return <Card title={project.title} thumb={project.thumb} />;
+      {projects.map((project, index) => {
+        return <Card title={project.title} thumb={project.thumb} key={index} />;
       })}
     </div>
   );

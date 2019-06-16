@@ -1,9 +1,10 @@
 import React from "react";
-import "../styles/style.scss";
+import "./styles/style.scss";
 import Projects from "./pages/Projects";
+import "./App.css";
 
-const Root = () => {
+function App() {
   return <Projects />;
-};
+}
 
-export default Root;
+export default App;
