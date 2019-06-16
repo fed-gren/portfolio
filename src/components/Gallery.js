@@ -1,6 +1,7 @@
 import "../styles/gallery.scss";
 import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
+import Loader from "../components/Loader";
 
 export default () => {
   const [projects, setProjects] = useState([]);
@@ -22,19 +23,15 @@ export default () => {
   }, []);
 
   const renderProjects = () => {
-    const temp = projects.map((project, index) => {
-      return <Card
-        title={project.title}
-        thumb={project.thumb}
-        key={index}
-      />
-    })
-    return temp;
-  }
+    const projectsCards = projects.map((project, index) => {
+      return <Card title={project.title} thumb={project.thumb} key={index} />;
+    });
+    return projectsCards;
+  };
 
   return (
-    <div className="gallery">
-      {projects.length === 0 ? 'Loading' : renderProjects()}
+    <div className={projects.length === 0 ? "loading" : "gallery"}>
+      {projects.length === 0 ? <Loader color="#aaa"/> : renderProjects()}
     </div>
   );
 };

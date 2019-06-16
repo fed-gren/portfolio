@@ -3,7 +3,7 @@ $break-small: 850px;
 .gallery {
   display: grid;
   width: 100%;
-  background-color: rgb(80, 180, 226);
+  background-color: rgb(194, 214, 223);
   border: 1px solid blueviolet;
   grid-template-columns: auto auto auto auto;
   grid-gap: 1rem;
@@ -45,4 +45,12 @@ $break-small: 850px;
   font-weight: 200;
   border-bottom-left-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
+}
+
+.loading {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
