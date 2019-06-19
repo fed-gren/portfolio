@@ -15,6 +15,7 @@ export default () => {
   const getProjects = async () => {
     const temp = await callApi();
     //_callApi() 실행완료 전까지 아래 코드는 실행되지 않음 -> ?
+    callApi().then(value => console.log(value));
     setProjects(temp);
   };
 
